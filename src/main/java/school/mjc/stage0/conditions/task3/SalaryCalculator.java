@@ -7,12 +7,15 @@ public class SalaryCalculator {
         int salaryAfterTaxes;
         if (salary <= 10000) {
             salaryAfterTaxes = salary - ((salary * 15) / 100);
+            System.out.println(salaryAfterTaxes);
         }
         if (salary > 10000 && salary <= 20000) {
             salaryAfterTaxes = salary - ((salary * 18) / 100);
+            System.out.println(salaryAfterTaxes);
         }
         if (salary > 20000) {
             salaryAfterTaxes = salary - ((salary * 20) / 100);
+            System.out.println(salaryAfterTaxes);
         }
         else if (salary < 0) System.out.println("wrong input!");
     }
